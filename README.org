@@ -1,0 +1,4 @@
+#+TITLE: Scripts for daily use
+#+AUTHOR: SamuelNihBos
+
+this is my daily use script, mainly for shutdown, logout, and other script. If you want to use my scripts, makesure you have my build of [[dmenu][https://github.com/samuelnihbos/dmenu-samuel]] to ensure everything run fine
