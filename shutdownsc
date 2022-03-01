@@ -1,0 +1,11 @@
+#!/bin/sh
+
+choices="poweroff\nreboot\nlock\nlogout"
+chosen=$(echo "$choices" | dmenu -i -c -l 20)
+
+case "$chosen" in
+    poweroff) loginctl poweroff ;;
+    reboot) loginctl reboot ;;
+    logout) pkill -KILL -u $(whoami) ;;
+    lock) slock ;;
+esac
