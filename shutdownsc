@@ -4,8 +4,8 @@ choices="poweroff\nreboot\nlock\nlogout"
 chosen=$(echo "$choices" | dmenu -i -c -l 20)
 
 case "$chosen" in
-    poweroff) loginctl poweroff ;;
-    reboot) loginctl reboot ;;
+    poweroff) sudo systemctl poweroff ;;
+    reboot) sudo systemctl reboot ;;
     logout) pkill -KILL -u $(whoami) ;;
     lock) slock ;;
 esac
